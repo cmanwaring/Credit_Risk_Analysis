@@ -39,4 +39,5 @@ There is a high_risk precision of 3% and 70% recall, gives us an f1 score of 6%.
 In this model we reported a balanced accuracy score of 93%.
  - Imbalanced Classification Report:  
 There is a high_risk precision of 9% and 92% recall, gives us an f1 score of 16%.
-## Summary
+## Results Summary
+All of the models had very low precision in detecting high-risk credit. Even though the EasyEnsembleClassifier had 92% sensitivity for high-risk, it still only had 9% precision. While this may detect most of the high-risk credit accounts, it is also going to disqualify a **lot** of low-risk credit accounts from being approved for a loan. Because of this, I would not reccommend any of these models for credit checks; as the lender will lose more money to this modewl in missed opportunities than they would to customers that default on their loan.
